@@ -74,5 +74,33 @@ button:hover {
 
     to {
         text-shadow: 0 0 30px pink;
+        historia {
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+    animation: aparecer 2s ease;
+}
+
+#historia h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.momento {
+    background: rgba(255,255,255,0.10);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255,0,80,0.3);
+}
+
+.momento h3 {
+    color: #ffb6c1;
+    margin-bottom: 15px;
+}
+
+.momento p {
+    font-size: 18px;
+}
     }
 }
