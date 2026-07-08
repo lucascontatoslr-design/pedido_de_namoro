@@ -4,16 +4,18 @@
     box-sizing: border-box;
 }
 
+
 body {
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
     font-family: 'Georgia', serif;
     color: white;
     background: linear-gradient(135deg, #000000, #3d0015, #800020);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .inicio {
     text-align: center;
@@ -26,17 +28,20 @@ body {
     animation: aparecer 2s ease;
 }
 
+
 h1 {
     font-size: 45px;
     margin-bottom: 25px;
     animation: brilho 2s infinite alternate;
 }
 
+
 p {
     font-size: 20px;
     line-height: 1.7;
     margin-bottom: 35px;
 }
+
 
 button {
     padding: 18px 45px;
@@ -50,11 +55,82 @@ button {
     transition: .4s;
 }
 
+
 button:hover {
     transform: scale(1.1);
 }
 
+
+
+/* Esconde a história no começo */
+
+#historia {
+    display: none;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    animation: aparecer 2s ease;
+    height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+
+
+#historia h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+
+.introducao {
+    margin-bottom: 40px;
+}
+
+
+
+.momento {
+
+    background: rgba(255,255,255,0.10);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255,0,80,0.3);
+
+}
+
+
+
+.momento span {
+
+    color: #ffb6c1;
+    font-size: 18px;
+
+}
+
+
+
+.momento h3 {
+
+    color: #ffb6c1;
+    margin: 15px 0;
+
+}
+
+
+
+.momento p {
+
+    font-size: 18px;
+
+}
+
+
+
+/* Animações */
+
 @keyframes aparecer {
+
     from {
         opacity: 0;
         transform: translateY(40px);
@@ -64,7 +140,10 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
+
+
 
 @keyframes brilho {
 
@@ -74,33 +153,6 @@ button:hover {
 
     to {
         text-shadow: 0 0 30px pink;
-        historia {
-    display: none;
-    margin-top: 40px;
-    text-align: center;
-    animation: aparecer 2s ease;
-}
-
-#historia h2 {
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-
-.momento {
-    background: rgba(255,255,255,0.10);
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(255,0,80,0.3);
-}
-
-.momento h3 {
-    color: #ffb6c1;
-    margin-bottom: 15px;
-}
-
-.momento p {
-    font-size: 18px;
-}
     }
+
 }
